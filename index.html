@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+    <link rel="shortcut icon" href="/images/Techlogo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="main"> 
+        <h2>Entre agora</h2>
+        <div class="div-1 div-input">  <!-- Div de alinhamento e estilisação do input-->
+            <p id="email_para">Email</p>  <!-- id do paragrafo com a palavra email-->
+            <input id="email" type="email" placeholder="E-mail">   <!-- input type email, input que usaremos para direcionarmos gmail-->
+            <h1 id="informe" class="h1-informe"> Email Não Institucional</h1>
+            <h1 id="Coloqueumemail" class="h1-validado">  Coloque um Email Valido</h1>
+        </div>
+        <div class="div-1 div-input">  <!-- Div de alinhamento e estilisação do input-->
+            <p id="senha">Senha</p>   <!-- paragramo com a palavra senha com o id senha-->
+            <input type="password" placeholder="Senha">  <!-- input type password será usado para redirecionar senhas-->
+        </div>
+        <div class="div-1 div-check">  <!-- Div de alinhamento e estilisação do input checkbox-->
+            <div class="checkbox"></div>
+            <p>Lembrar minhas informações</p>
+        </div>
+        <div class="div-1 div-button">  <!-- Div de alinhamento e estilisação do button-->
+            <button onclick="login()">Fazer Login</button>
+            <p>ou</p>
+            <button onclick="cadastrar()">Cadastrar</button>
+        </div>
+        <div class="div-1 div-rec"> 
+            <p>Não consegue acessar</p>
+            <p onclick="redirecionar()">? Recuperar senha</p>
+        </div>
+        </div>
+    </div>
+
+    <div class="sqr-out">
+        <div class="sqr"></div>
+    </div>
+    
+    <script src="box.js"></script>
+</body>
+
+</html>

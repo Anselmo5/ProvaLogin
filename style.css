@@ -1,0 +1,248 @@
+* {
+margin: 0;
+border: none;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+width: 100vw;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background-image: url(./images/background.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.background {
+position: absolute;
+top: 0;
+background: rgba(0, 0, 0, 0.385);
+width: 100%;
+height: 100%;
+}
+
+.main {
+border-radius: 5px;
+width: calc(100% - 20px);
+max-width: 350px;
+height: fit-content;
+margin: 0 auto;
+display: flex;
+align-items: center;
+flex-direction: column;
+padding: 20px;
+background-color: rgb(249, 249, 249);
+z-index: 1;
+overflow: hidden;
+}
+
+.main h2 {
+color: rgb(167, 167, 167);
+font-size: 18px;
+text-align:center;
+margin-bottom: 20px;
+margin-top: 3px;
+}
+
+.btn_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn_1 button{
+background-color:rgb(228, 228, 228);
+color: rgb(38, 38, 38);
+font-size: 18px;
+width: 15vh;
+height:5vh ;
+border-radius: 2px;
+box-shadow: 0px 2px rgb(65, 61, 61);
+}
+
+
+
+.div-1 {
+width: calc(100% - 20px);
+max-width: 250px;
+margin: 10px;
+}
+
+.div-input p {
+margin-bottom: 10px;
+}
+
+.div-input input {
+height: 6vh;
+width: 100%;
+background-color: rgb(228, 228, 228);
+padding: 10px;
+border-radius: 4px;
+outline: none;
+}
+
+.div-input input::placeholder {
+color:rgb(44, 44, 44);
+} 
+
+.div-button {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.div-button button {
+height: 6vh;
+width: 100%;
+background-color: rgb(228, 228, 228);
+border-bottom: solid 2px rgb(44, 44, 44);
+cursor: pointer;
+font-weight: bolder;
+color: rgb(77, 77, 77);
+}
+
+.div-button p {
+margin-top: 1vh;
+margin-bottom: 1vh;
+}
+
+.div-rec {
+display: flex;
+justify-content: center;
+font-size: 11px;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+
+.div-check {
+display: flex;
+justify-content: flex-start;
+font-size: 15px;
+white-space: nowrap;
+text-overflow: ellipsis;
+}
+
+.checkbox{
+min-width: 20px;
+height: 20px;
+transition: .1s;    
+border: 1px solid rgb(38, 38, 38);
+border-radius: 3px;
+margin-right: 10px;
+}
+
+.active{
+animation: checkmation 1s;
+background-color: rgb(65, 65, 65); 
+}
+
+@keyframes checkmation {
+0% {
+    box-shadow: 0 0 0 0;
+}
+
+50% {box-shadow: 0 0 0 4px rgba(40, 40, 40, 0.412);}
+
+100% {
+    box-shadow: 0 0 0 0;
+}
+}
+
+
+
+.borda-vermelha{
+    border: 2px solid rgba(255, 0, 0, 0.89);
+}
+
+
+.div-3{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.forns-cadastro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.forns-cadastro input{
+    width: calc( 100% - 10px);
+    max-width:100%;
+    height:6vh;
+    padding: 5px;
+    outline: none;
+    background-color: rgb(228, 228, 228);
+    border-radius: 2px;
+
+
+    
+}
+
+::placeholder{
+    color: rgba(0, 0, 0, 0.385);
+}
+
+.ipt1 input {
+    margin-top: 10px;
+}
+
+.ipt1 p{
+    margin-top: 8px;
+}
+
+.ipt2 input{
+    margin-top:8px;
+}
+
+.ipt2 p{
+    margin-top: 5px;
+}
+
+.ipt3 p{
+    margin-top: 20px;
+}
+
+.ipt3 input {
+    margin-top: 5px;
+}
+
+.btn2{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    flex-direction: column;
+}
+
+.btn2 button{
+    margin-top: 10px;
+    width: calc(100% - 10px);
+    max-width: 10vh;
+    height: 6vh;
+    box-shadow: 0px 2px rgb(44, 44, 44);
+    margin-right: 2.3vh;
+    outline: none;
+}
+
+.h1-informe{
+    display: none;
+    font-size: 12px;
+    margin-top: 5px;
+    color: #e63636 ;
+}
+
+.h1-validado{
+    display: none;
+    font-size: 12px;
+    color: #e63636;
+    margin-top: 5px;
+}
